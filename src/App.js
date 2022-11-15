@@ -60,8 +60,7 @@ function App() {
             </p>
             <p>
               <a target='_blank' href='https://twitter.com/'>
-                <img className='icons' src={twitterPng}></img>{' '}
-                TWITTER/@user-handle
+                <img className='icons' src={twitterPng}></img> TWITTER/@username
               </a>
             </p>
             <p>
