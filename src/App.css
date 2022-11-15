@@ -1,38 +1,230 @@
-.App {
+* {
+  font-size: 16px;
+}
+
+.container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.title-box {
+  max-width: 63rem;
+  background: #7abcac;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  padding: 22px;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.person-describtion-box {
+  width: 586px;
+  margin: 0 auto;
+  border: 4px solid black;
+  text-align: center;
+  padding: 44px;
+}
+
+.person {
+  width: 359px;
+  height: 56px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.work-field {
+  background: black;
+  width: 15rem;
+  height: 1.75rem;
+  color: white;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutMe-links-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.aboutMe-box {
+  max-width: 40rem;
+}
+
+.links-box {
+  max-width: 30rem;
+  text-align: left;
+}
+
+.links-box ul li {
+  list-style: none;
+  text-align: left;
+}
+
+.links-box ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.links-box ul li a:hover {
+  color: #11aafce2;
+}
+
+.education-skills {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.personal-skills_list ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.technical-skills_list ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.technical-skills {
+  text-align: left;
+}
+
+.workExperience_box-jobs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.workExperience_box-jobs {
+  text-align: center;
+}
+
+.job-box ul li {
+  text-align: left;
+}
+
+.job-box-border {
+  border-right: solid lightgray;
+  padding-right: 20px;
+  margin-right: 1rem;
+}
+
+.contacts {
+  margin-top: 2rem;
+}
+
+.contacts-title {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.contacts-title_box-type {
+  background: black;
   color: white;
+  padding: 1px 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.contacts-title_box ul li {
+  list-style: none;
+  margin-right: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contacts-title_box ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.contacts-title_box ul li a:hover {
+  color: #11aafce2;
+}
+
+.blue {
+  background: #7abc;
+  width: 110px;
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.yellow {
+  background: #d8da79;
+  width: 154px;
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.brown {
+  background: #c29486;
+  width: 137px;
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.lightGreen {
+  background: #14c9a8;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  margin-right: 15px;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+.hr {
+  max-width: 65rem;
+  height: 4px;
+  background: lightgray;
+  margin-left: 72px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+
+.hr1 {
+  background: #7abcac;
+  height: 10px;
+  width: 72px;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: -0.5rem;
+}
+
+.hr3 {
+  height: 4px;
+  background: lightgray;
 }
