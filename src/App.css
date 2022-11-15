@@ -10,27 +10,33 @@
 }
 
 .title-box {
-  max-width: 63rem;
+  max-width: 1080px;
   background: #7abcac;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
   font-weight: bold;
   padding: 22px;
   font-size: 1.5rem;
   margin-top: 5px;
 }
 
+.title-box .select-language {
+  background: gray;
+  outline: none;
+}
+
 .person-describtion-box {
-  width: 586px;
+  width: 45%;
   margin: 0 auto;
   border: 4px solid black;
   text-align: center;
   padding: 44px;
+  transform: scaleY(1.25);
 }
 
 .person {
-  width: 359px;
-  height: 56px;
+  width: 100%px;
+
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
@@ -39,10 +45,10 @@
 
 .work-field {
   background: black;
-  width: 15rem;
-  height: 1.75rem;
+  width: 250px;
   color: white;
   margin: 0 auto;
+  margin-top: 1rem;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -50,20 +56,25 @@
 }
 
 .aboutMe-links-box {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 150px;
+  justify-content: flex-end;
 }
 
 .aboutMe-box {
-  max-width: 40rem;
 }
 
 .links-box {
-  max-width: 30rem;
-  text-align: left;
+}
+
+.aboutMe-box {
+  max-width: 720px;
+}
+
+.links-box {
+  max-width: 360px;
 }
 
 .links-box ul li {
@@ -71,32 +82,41 @@
   text-align: left;
 }
 
-.links-box ul li a {
+.links-box a {
   text-decoration: none;
   color: black;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.links-box ul li a:hover {
+.links-box a:hover {
   color: #11aafce2;
 }
 
-.education-skills {
+/* .education-skills {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+} */
+
+.education-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  font-weight: 600;
 }
 
-.personal-skills_list ul li {
-  list-style: none;
+.personal-skills_list {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
-.technical-skills_list ul li {
-  list-style: none;
+.personal-skills_list {
+  align-self: flex-end;
+}
+
+.technical-skills_list {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -196,7 +216,7 @@
   width: 30px;
   height: 30px;
   line-height: 20px;
-  margin-right: 15px;
+  margin-right: 10px;
   vertical-align: middle;
   padding-top: 2px;
 }
@@ -227,4 +247,26 @@ h2 {
 .hr3 {
   height: 4px;
   background: lightgray;
+}
+
+@media screen and (max-width: 600px) {
+  .education-skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .person {
+    font-size: 1.6rem;
+  }
+
+  .work-field {
+    font-size: 1rem;
+    width: 200px;
+  }
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

@@ -10,7 +10,12 @@ function App() {
   return (
     <div className='container'>
       <header>
-        <div className='title-box'>RESUME</div>
+        <div className='title-box'>
+          <select className='select-language'>
+            <option value=''>Lietuviu Kalba</option>
+            <option value=''>Anglu Kalba</option>
+          </select>
+        </div>
         <div className='person-describtion-box'>
           <h1 className='person'>Edgar Martynenko</h1>
           <p className='work-field'>PROGRAMMER</p>
@@ -46,30 +51,29 @@ function App() {
               <div className='hr1'></div>
               <div className='hr'></div>
             </div>
-            <ul>
-              <li>
-                <a target='_blank' href='https://lt.linkedin.com/'>
-                  <img className='icons' src={linkedinPng}></img>{' '}
-                  LINKEDIN/username
-                </a>
-              </li>
-              <li>
-                <a target='_blank' href='https://twitter.com/'>
-                  <img className='icons' src={twitterPng}></img>{' '}
-                  TWITTER/@user-handle
-                </a>
-              </li>
-              <li>
-                <a target='_blank' href='https://github.com/'>
-                  <img className='icons' src={githubPng}></img> GITHUB/username
-                </a>
-              </li>
-              <li>
-                <a target='_blank' href='https://dev.to/t/blog'>
-                  <img className='icons' src={devBlogPng}></img> BLOG/blog-name
-                </a>
-              </li>
-            </ul>
+
+            <p>
+              <a target='_blank' href='https://lt.linkedin.com/'>
+                <img className='icons' src={linkedinPng}></img>{' '}
+                LINKEDIN/username
+              </a>
+            </p>
+            <p>
+              <a target='_blank' href='https://twitter.com/'>
+                <img className='icons' src={twitterPng}></img>{' '}
+                TWITTER/@user-handle
+              </a>
+            </p>
+            <p>
+              <a target='_blank' href='https://github.com/'>
+                <img className='icons' src={githubPng}></img> GITHUB/username
+              </a>
+            </p>
+            <p>
+              <a target='_blank' href='https://dev.to/t/blog'>
+                <img className='icons' src={devBlogPng}></img> BLOG/blog-name
+              </a>
+            </p>
           </div>
         </div>
 
@@ -93,12 +97,10 @@ function App() {
             <div className='hr1'></div>
             <div className='hr'></div>
             <div className='personal-skills_list'>
-              <ul>
-                <li className='blue'>teamwork</li>
-                <li className='yellow'>comunications</li>
-                <li className='brown'>organization</li>
-                <li className='lightGreen'>adaptive</li>
-              </ul>
+              <p className='blue'>teamwork</p>
+              <p className='yellow'>comunications</p>
+              <p className='brown'>organization</p>
+              <p className='lightGreen'>adaptive</p>
             </div>
           </section>
           <section className='technical-skills'>
@@ -108,13 +110,11 @@ function App() {
               <div className='hr'></div>
             </div>
             <div className='technical-skills_list'>
-              <ul>
-                <li className='blue'>HTML</li>
-                <li className='blue'>CSS/SCSS</li>
-                <li className='yellow'>JAVASCRIPT</li>
-                <li className='yellow'>REACT.JS</li>
-                <li className='brown'>Nodde.JS</li>
-              </ul>
+              <p className='blue'>html</p>
+              <p className='blue'>CSS/SCSS</p>
+              <p className='yellow'>JAVASCRIPT</p>
+              <p className='yellow'>REACT.JS</p>
+              <p className='brown'>Nodde.JS</p>
             </div>
           </section>
         </div>
