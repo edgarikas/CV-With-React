@@ -1,6 +1,5 @@
 import './App.css';
 
-import fbPng from './icons/fb.png';
 import linkedinPng from './icons/linkedin.png';
 import twitterPng from './icons/twitter.png';
 import githubPng from './icons/github.png';
@@ -12,8 +11,8 @@ function App() {
       <header>
         <div className='title-box'>
           <select className='select-language'>
-            <option value=''>Lietuviu Kalba</option>
-            <option value=''>Anglu Kalba</option>
+            <option value='lt'>Lietuviu Kalba</option>
+            <option value='en'>Anglu Kalba</option>
           </select>
         </div>
         <div className='person-describtion-box'>
@@ -210,7 +209,6 @@ function App() {
                     <a href='tel:+37064588222'>+37064588222</a>
                   </li>
                   <li>
-                    {' '}
                     <a href='mailto:example@gmail.com'>example@gmail.com</a>
                   </li>
                 </ul>
