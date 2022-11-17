@@ -1,0 +1,40 @@
+:root {
+  --width: 160px;
+}
+
+.badge-blue {
+  background: #7abc;
+  width: var(--width);
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.badge-yellow {
+  background: #d8da79;
+  width: var(--width);
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.badge-brown {
+  background: #c29486;
+  width: var(--width);
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.badge-lightGreen {
+  background: #14c9a8;
+  width: var(--width);
+  height: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: bold;
+}

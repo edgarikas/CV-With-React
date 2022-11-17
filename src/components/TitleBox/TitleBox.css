@@ -1,0 +1,10 @@
+.title-box {
+  max-width: 1080px;
+  background: #7abcac;
+  margin: 0 auto;
+  text-align: right;
+  font-weight: bold;
+  padding: 22px;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}

@@ -5,29 +5,33 @@ import twitterPng from './icons/twitter.png';
 import githubPng from './icons/github.png';
 import devBlogPng from './icons/dev.png';
 
+import Links from './components/Links/Links.js';
+import Headings2 from './components/Headings2/Headings2.js';
+import TitleBox from './components/TitleBox/TitleBox';
+import PersonDesciption from './components/PersonDesciption/PersonDesciption';
+import Badge from './components/Badge/Badge';
+
 function App() {
   return (
     <div className='container'>
       <header>
-        <div className='title-box'>
+        <TitleBox>
           <select className='select-language'>
             <option value='lt'>Lietuviu Kalba</option>
             <option value='en'>Anglu Kalba</option>
           </select>
-        </div>
-        <div className='person-describtion-box'>
+        </TitleBox>
+
+        <PersonDesciption>
           <h1 className='person'>Edgar Martynenko</h1>
           <p className='work-field'>PROGRAMMER</p>
-        </div>
+        </PersonDesciption>
       </header>
       <main>
         <div className='aboutMe-links-box'>
           <div className='aboutMe-box'>
-            <h2>About Me</h2>
-            <div className='line'>
-              <div className='hr1'></div>
-              <div className='hr'></div>
-            </div>
+            <Headings2>About Me</Headings2>
+
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
               dolorem, maiores exercitationem consequatur incidunt autem
@@ -44,44 +48,32 @@ function App() {
               qui?
             </p>
           </div>
-          <div className='links-box'>
-            <h2>Links</h2>
-            <div className='line'>
-              <div className='hr1'></div>
-              <div className='hr'></div>
-            </div>
 
-            <p>
-              <a target='_blank' href='https://lt.linkedin.com/'>
-                <img className='icons' src={linkedinPng}></img>{' '}
-                LINKEDIN/username
-              </a>
-            </p>
-            <p>
-              <a target='_blank' href='https://twitter.com/'>
-                <img className='icons' src={twitterPng}></img> TWITTER/@username
-              </a>
-            </p>
-            <p>
-              <a target='_blank' href='https://github.com/'>
-                <img className='icons' src={githubPng}></img> GITHUB/username
-              </a>
-            </p>
-            <p>
-              <a target='_blank' href='https://dev.to/t/blog'>
-                <img className='icons' src={devBlogPng}></img> BLOG/blog-name
-              </a>
-            </p>
+          <div className='links-box'>
+            <Headings2>Links</Headings2>
+
+            <Links href='https://lt.linkedin.com/' target='_blank'>
+              <img className='icons' src={linkedinPng}></img> LINKEDIN/username
+            </Links>
+
+            <Links href='https://twitter.com/'>
+              <img className='icons' src={twitterPng}></img> TWITTER/@username
+            </Links>
+
+            <Links href='https://github.com/'>
+              <img className='icons' src={githubPng}></img> GITHUB/username
+            </Links>
+
+            <Links href='https://dev.to/t/blog'>
+              <img className='icons' src={devBlogPng}></img> BLOG/blog-name
+            </Links>
           </div>
         </div>
 
         <div className='education-skills'>
           <section className='education'>
-            <h2>Education</h2>
-            <div className='line'>
-              <div className='hr1'></div>
-              <div className='hr'></div>
-            </div>
+            <Headings2>Education</Headings2>
+
             <h3>Ryto gimnazija</h3>
             <p>2007-2019</p>
             <p>Vidutinis issilavinimas</p>
@@ -90,40 +82,34 @@ function App() {
             <p>2019-2022</p>
             <p>Aukstasis</p>
           </section>
+
           <section className='personal-skills'>
-            <h2>Personal Skills</h2>
-            <div className='hr1'></div>
-            <div className='hr'></div>
+            <Headings2>Personal Skills</Headings2>
+
             <div className='personal-skills_list'>
-              <p className='blue'>teamwork</p>
-              <p className='yellow'>comunications</p>
-              <p className='brown'>organization</p>
-              <p className='lightGreen'>adaptive</p>
+              <Badge>teamwork</Badge>
+              <Badge className='yellow'>comunications</Badge>
+              <Badge className='brown'>organization</Badge>
+              <Badge className='lightGreen'>adaptive</Badge>
             </div>
           </section>
           <section className='technical-skills'>
-            <h2>technical skills</h2>
-            <div className='line'>
-              <div className='hr1'></div>
-              <div className='hr'></div>
-            </div>
+            <Headings2>Technical Skills</Headings2>
+
             <div className='technical-skills_list'>
-              <p className='blue'>html</p>
-              <p className='blue'>CSS/SCSS</p>
-              <p className='yellow'>JAVASCRIPT</p>
-              <p className='yellow'>REACT.JS</p>
-              <p className='brown'>Nodde.JS</p>
+              <Badge>html</Badge>
+              <Badge>CSS/SCSS</Badge>
+              <Badge className='brown'>AVASCRIPT</Badge>
+              <Badge className='yellow'>REACT.JS</Badge>
+              <Badge className='lightGreen'>Nodde.JS</Badge>
             </div>
           </section>
         </div>
 
         <div className='workExperience'>
           <section className='workExperience_box'>
-            <h2>Work Experience</h2>
-            <div className='line'>
-              <div className='hr1'></div>
-              <div className='hr'></div>
-            </div>
+            <Headings2>Work Experience </Headings2>
+
             <div className='workExperience_box-jobs'>
               <div className='job-box job-box-border'>
                 <h3>JOB POSITION</h3>
@@ -203,33 +189,27 @@ function App() {
 
             <div className='contacts-title_box'>
               <h2 className='contacts-title_box-type'>Contact</h2>
-              <div className='ontacts-title_box-description'>
-                <ul>
-                  <li>
-                    <a href='tel:+37064588222'>+37064588222</a>
-                  </li>
-                  <li>
-                    <a href='mailto:example@gmail.com'>example@gmail.com</a>
-                  </li>
-                </ul>
+              <div className='contacts-title_box-description'>
+                <Links href='tel:+37064588222'>+37064588222</Links>
+                <Links className='mt' href='mailto:example@gmail.com'>
+                  example@gmail.com
+                </Links>
               </div>
             </div>
 
             <div className='contacts-title_box'>
               <h2 className='contacts-title_box-type'>Social</h2>
               <div className='ontacts-title_box-description'>
-                <ul>
-                  <li>
-                    <a target='_blank' href='https://lt.linkedin.com/'>
-                      LinekdIn/username
-                    </a>
-                  </li>
-                  <li>
-                    <a target='_blank' href='https://twitter.com/'>
-                      Twitter/@user-handle
-                    </a>
-                  </li>
-                </ul>
+                <Links target='_blank' href='https://lt.linkedin.com/'>
+                  LinekdIn/username
+                </Links>
+                <Links
+                  className='mt'
+                  target='_blank'
+                  href='https://twitter.com/'
+                >
+                  Twitter/@user-handle
+                </Links>
               </div>
             </div>
           </div>

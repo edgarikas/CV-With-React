@@ -1,0 +1,22 @@
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: -0.5rem;
+}
+
+.hr {
+  max-width: 65rem;
+  height: 4px;
+  background: lightgray;
+  margin-left: 72px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+
+.hr1 {
+  background: #7abcac;
+  height: 10px;
+  width: 72px;
+}
